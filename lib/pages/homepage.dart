@@ -38,7 +38,7 @@ class _HomePageState extends State<HomePage>{
       db.itemList[index][1] = !db.itemList[index][1];
       
     });
-    
+    Vibration.vibrate(duration: 1000);
     db.updateData();
   }
 
